@@ -1,7 +1,6 @@
 import pygame
 import random
 
-
 pygame.init()
 
 display_width = 800
@@ -11,8 +10,10 @@ display = pygame.display.set_mode((display_width, display_height))
 pygame.display.set_caption('JUMP!')
 icon = pygame.image.load('man.png')
 pygame.display.set_icon(icon)
+pygame.mixer.music.load('music/fon_music.mp3')
+pygame.mixer.music.play()
 
-stone_img = [pygame.image.load('stone1.png'),pygame.image.load('stone2.png'),pygame.image.load('stone3.png')]
+stone_img = [pygame.image.load('stone1.png'), pygame.image.load('stone2.png'), pygame.image.load('stone3.png')]
 stone_options = [30, 454, 42, 449, 40, 462]
 
 frog_img = [pygame.image.load('frog.png')]
